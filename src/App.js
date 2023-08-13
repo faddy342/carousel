@@ -1,8 +1,11 @@
 import NavBar from "./NavBar";
-
+import Carousel from "./Carousel";
 function App() {
   return (
-    <NavBar/>
+    <>
+      <Carousel></Carousel>
+      <div className="NavBar"><NavBar/></div>
+    </>
   );
 }
 

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './NavBar.css';
 
 const NavBar = () => {
     const [state, setState] = useState({count: 0, theme:'blue'})

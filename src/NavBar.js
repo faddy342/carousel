@@ -17,11 +17,11 @@ const NavBar = () => {
       })
     }
     return (
-      <>
+      <div className='NavBar'>
         <button onClick={minus} className='btn'>-</button>
         <span className='num'>{count}{theme}</span>
         <button onClick={plus} className='btn'>+</button>
-      </>
+      </div>
     );
 }
 export default NavBar

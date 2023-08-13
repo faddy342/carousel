@@ -14,12 +14,12 @@ body {
 #root{
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .NavBar{
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 .num{
   font-size: 5.5rem;

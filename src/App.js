@@ -1,9 +1,9 @@
-
-import NavBar from './NavBar';
-import './NavBar.css';
+import NavBar from "./NavBar";
 
 function App() {
-  <NavBar/>
+  return (
+    <NavBar></NavBar>
+  );
 }
 
 export default App;

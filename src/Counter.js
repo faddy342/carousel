@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const NavBar = () => {
+const Counter = () => {
     const [state, setState] = useState({count: 0, theme:'blue'})
     const count = state.count
     const theme = state.theme
@@ -17,11 +17,11 @@ const NavBar = () => {
       })
     }
     return (
-      <div className='NavBar'>
+      <div className='Counter'>
         <button onClick={minus} className='btn'>-</button>
         <span className='num'>{count}{theme}</span>
         <button onClick={plus} className='btn'>+</button>
       </div>
     );
 }
-export default NavBar
+export default Counter

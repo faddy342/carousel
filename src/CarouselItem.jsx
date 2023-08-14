@@ -1,10 +1,9 @@
 import React from 'react'
 
-export const CarouselItem = ({ item }) => {
+export const CarouselItem = ({ image }) => {
   return (
-      <div className='carousel-item'>
-          <img src={item.icons.default} alt={item.title} className="carousel-img" />
-          <p className="carousel-item-description">{item.description}</p>
+      <div key={image.id} className='carousel-item'>
+          <img src={image.download_url} alt={image.author} className="carousel-img" />
       </div>
   )
 }

@@ -1,9 +1,9 @@
 
-import {Carousel} from "./Carousel";
+import {CarouselComponent} from "./Carousel";
 function App() {
   return (
     <div className="App">
-      <Carousel></Carousel>
+      <CarouselComponent></CarouselComponent>
     </div>
   );
 }

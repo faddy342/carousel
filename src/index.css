@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
 
-
 *{
   padding: 0;
   margin: 0;
@@ -24,6 +23,7 @@
   border-radius: 15px;
   overflow: hidden;
 }
+
 .carousel-track{
   display: grid;
   height: 100%;
@@ -31,10 +31,12 @@
   grid-auto-flow: column;
   transition: transform .5s cubic-bezier(.42,0,.58,1);
 }
+
 .carousel-img{
   width: 100%;
   height: 100%;
 }
+
 .carousel-dots{
   position: absolute;
   bottom: 10px;
@@ -45,10 +47,12 @@
   color: #fff;
   z-index: 1;
 }
+
 .dot{
   display: flex;
   cursor: pointer;
 }
+
 .controls{
   position: absolute;
   top: 0;
@@ -60,6 +64,7 @@
   align-items: center;
   z-index: 1;
 }
+
 .left,.right{
   display: flex;
   cursor: pointer;
@@ -67,6 +72,7 @@
   color: #fff;
   margin: 0 10px;
 }
+
 .left.hidden,.right.hidden{
   visibility: hidden;
 }

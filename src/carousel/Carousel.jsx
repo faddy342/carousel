@@ -58,6 +58,9 @@ export const Carousel = () => {
   function nextSlide() {
     if (index < images.length - 1) { setIndex(index + 1) }
   }
+  function callSlide(targetIndex) {
+    setIndex(targetIndex)
+  }
 
   return (
     <div className='carousel'>
@@ -70,7 +73,7 @@ export const Carousel = () => {
           return <CarouselItem image={image} key={image.id}></CarouselItem>
         })}
       </div>
-      <div className="carousel-dots">{images.map((dot,dotIndex) => { return <div key={dotIndex} className="dot">{(dotIndex !== index) ? <MdRadioButtonUnchecked /> : <MdRadioButtonChecked />}</div> })}</div>
+      <div className="carousel-dots">{images.map((dot, dotIndex) => { return <div key={dotIndex} className="dot" onClick={() => { callSlide(dotIndex) }}> {(dotIndex !== index) ? <MdRadioButtonUnchecked /> : <MdRadioButtonChecked />}</div> })}</div>
     </div>
   )
 }

@@ -42,6 +42,10 @@
   display: flex;
   gap: 5px;
   color: #fff;
+  z-index: 1;
+}
+.dot{
+  cursor: pointer;
 }
 .controls{
   position: absolute;

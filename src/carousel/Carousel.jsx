@@ -29,7 +29,7 @@ export const Carousel = () => {
           return <CarouselItem image={image} key={image.id}></CarouselItem>
         })}
       </div>
-      <div className="carousel-dots">{images.map(() => { return <div className="dot"><MdRadioButtonUnchecked></MdRadioButtonUnchecked></div> })}</div>
+      <div className="carousel-dots">{images.map((dot,dotIndex) => { return <div className="dot">{(dotIndex !== index) ? <MdRadioButtonUnchecked /> : <MdRadioButtonChecked />}</div> })}</div>
     </div>
   )
 }

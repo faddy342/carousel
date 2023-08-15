@@ -1,5 +1,5 @@
 
-import {Carousel} from "./Carousel";
+import {Carousel} from "./carousel/Carousel";
 function App() {
   return (
     <div className="App">

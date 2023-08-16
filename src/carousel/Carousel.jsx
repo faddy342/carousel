@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CarouselItem } from './CarouselItem'
+import { motion } from "framer-motion"
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { MdRadioButtonUnchecked, MdRadioButtonChecked } from "react-icons/md";
 
@@ -68,11 +69,11 @@ export const Carousel = () => {
         <div className={`left ${index === 0? "hidden" : "shown"}`} onClick={prevSlide} ><FaAngleLeft /></div>
         <div className={`right ${index === images.length - 1? "hidden" : "shown"}`} onClick={nextSlide}><FaAngleRight /></div>
       </div>
-      <div className="carousel-track" style={{transform:`translateX(-${index * 100}%)`}}>
+      <motion.div className="carousel-track" animate={{x: `-${index * 100}%`}} transition={{ duration:0.5, ease: [.42, 0, .58, 1] }}  >
         {images.map((image) => {
           return <CarouselItem image={image} key={image.id}></CarouselItem>
         })}
-      </div>
+      </motion.div>
       <div className="carousel-dots">{images.map((dot, dotIndex) => { return <div key={dotIndex} className="dot" onClick={() => { callSlide(dotIndex) }}> {(dotIndex !== index) ? <MdRadioButtonUnchecked /> : <MdRadioButtonChecked />}</div> })}</div>
     </div>
   )

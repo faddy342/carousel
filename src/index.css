@@ -66,11 +66,17 @@
 }
 
 .left,.right{
+  padding: 5px;
+  border-radius: 50%;
   display: flex;
   cursor: pointer;
   font-size: 25px;
   color: #fff;
-  margin: 0 10px;
+  margin: 0 5px;
+}
+
+.left:hover,.right:hover{
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .left.hidden,.right.hidden{

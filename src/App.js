@@ -1,4 +1,3 @@
-
 import {Carousel} from "./carousel/Carousel";
 function App() {
   return (

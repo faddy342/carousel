@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 *{
@@ -76,8 +80,4 @@
 
 .left:hover,.right:hover{
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.left.hidden,.right.hidden{
-  visibility: hidden;
 }

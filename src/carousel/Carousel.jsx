@@ -66,8 +66,8 @@ export const Carousel = () => {
   return (
     <div className='carousel'>
       <div className="controls">
-        <div className={`left ${index === 0? "hidden" : "shown"}`} onClick={prevSlide} ><FaAngleLeft /></div>
-        <div className={`right ${index === images.length - 1? "hidden" : "shown"}`} onClick={nextSlide}><FaAngleRight /></div>
+        <div className={`left ${index === 0? "invisible" : "visible"}` } onClick={prevSlide} ><FaAngleLeft /></div>
+        <div className={`right ${index === images.length - 1? "invisible" : "visible"}`} onClick={nextSlide}><FaAngleRight /></div>
       </div>
       <motion.div className="carousel-track" animate={{x: `-${index * 100}%`}} transition={{ duration:0.5, ease: [.42, 0, .58, 1] }}  >
         {images.map((image) => {
